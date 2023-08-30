@@ -19,8 +19,7 @@ func main() {
 	alex.contact.zipCode = 2341
 	alex.print()
 	fmt.Println()
-	alexPointer := &alex
-	alexPointer.updateName("Tomasz")
+	alex.updateName("Tomasz")
 	alex.print()
 	fmt.Println()
 }
