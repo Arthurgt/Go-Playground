@@ -21,5 +21,7 @@ func main() {
 	fmt.Println()
 	alex.updateName("Tomasz")
 	alex.print()
-	fmt.Println()
+
+	mapOfColors := createMapOfColors()
+	printMap(mapOfColors)
 }

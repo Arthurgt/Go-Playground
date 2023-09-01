@@ -13,5 +13,6 @@ func (p person) print() {
 }
 
 func (pointerToPerson *person) updateName(newFristName string) {
+	fmt.Println("Updating name")
 	(*pointerToPerson).firstName = newFristName
 }
