@@ -24,4 +24,10 @@ func main() {
 
 	mapOfColors := createMapOfColors()
 	printMap(mapOfColors)
+
+	sergio := spanishBot{}
+	marcus := englishBot{}
+
+	printGreeting(sergio)
+	printGreeting(marcus)
 }
