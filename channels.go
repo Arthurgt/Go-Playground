@@ -9,7 +9,7 @@ func makeChannels() {
 		"http://stackoverflow.com",
 	}
 
-	for _,link := range links {
-		
+	for _, link := range links {
+
 	}
 }
