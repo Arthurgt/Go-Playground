@@ -50,4 +50,6 @@ func main() {
 	triangle := triangle{height: 10, base: 12}
 	printArea(square)
 	printArea(triangle)
+
+	makeChannels()
 }
