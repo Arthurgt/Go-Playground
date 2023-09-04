@@ -1,2 +1,2 @@
 # Go-Playground
-Some golang excercise to master language: pointers, structs, maps, interfaces.
+Some golang excercise to master language: pointers, structs, maps, interfaces, concurency.
