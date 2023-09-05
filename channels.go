@@ -14,16 +14,22 @@ func makeChannels() {
 		"http://stackoverflow.com",
 	}
 
+	linkChannel := make(chan string)
+
 	for _, link := range links {
-		checkLink(link)
+		go checkLink(link, linkChannel)
 	}
+
+	fmt.Println(<-linkChannel)
 }
 
-func checkLink(link string) {
+func checkLink(link string, linkChannel chan string) {
 	_, err := http.Get(link)
 	if err != nil {
 		fmt.Println(link + " might be down!")
+		linkChannel <- "Might be down I think"
 		return
 	}
 	fmt.Println(link + " is up!")
+	linkChannel <- "Yep, is up"
 }
