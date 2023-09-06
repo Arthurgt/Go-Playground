@@ -20,7 +20,9 @@ func makeChannels() {
 		go checkLink(link, linkChannel)
 	}
 
-	fmt.Println(<-linkChannel)
+	for i := 0; i < len(links); i++ {
+		fmt.Println(<-linkChannel)
+	}
 }
 
 func checkLink(link string, linkChannel chan string) {
