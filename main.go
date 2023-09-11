@@ -53,4 +53,5 @@ func main() {
 
 	// makeChannels()
 	unpackJson()
+	divider()
 }
