@@ -51,5 +51,6 @@ func main() {
 	printArea(square)
 	printArea(triangle)
 
-	makeChannels()
+	// makeChannels()
+	unpackJson()
 }
